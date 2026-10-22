@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recommendations</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            background-color: #171717;
+            color: white;
+        }
+
+        .header {
+            background-color: #101010;
+            padding: 22px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #ff8c42;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .nav {
+            text-align: right;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-size: 13px;
+        }
+
+        .nav a:hover {
+            color: #ff8c42;
+        }
+
+        .alt {
+            text-align: center;
+            padding: 55px 20px 40px;
+            background-image: linear-gradient(
+                rgba(0,0,0,0.78),
+                rgba(0,0,0,0.88)
+            ), url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .alt p {
+            color: #ddd;
+            line-height: 1.8;
+        }
+
+        .alt .small {
+            color: #ff8c42;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 12px 0;
+        }
+
+        h1 span {
+            color: #ff8c42;
+        }
+
+        .menu-title {
+            text-align: center;
+            padding: 30px 15px 10px;
+        }
+
+        .menu-title h2 {
+            color: #ff8c42;
+        }
+
+        .foods {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px 5% 45px;
+        }
+
+        .pone {
+            background-color: #242424;
+            width: 300px;
+            border: 1px solid #493426;
+            border-radius: 12px;
+            overflow: hidden;
+
+        }
+
+        .pone:hover {
+            border-color: #ff8c42;
+            box-shadow: 0 8px 25px #000;
+        }
+
+        .pone img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 18px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #ff8c42;
+            color: #171717;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .details h3 {
+            font-size: 19px;
+            margin: 15px 0 10px;
+        }
+
+        .details p {
+            color: #ccc;
+            font-size: 13px;
+            line-height: 1.8;
+            min-height: 45px;
+        }
+
+        .priceee {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .price {
+            color: #ff8c42;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #ffbd35;
+            font-size: 13px;
+        }
+
+        .order {
+            display: inline-block;
+            background-color: #ff8c42;
+            color: #171717;
+            padding: 10px 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .order:hover {
+            background-color: #ffc08f;
+        }
+
+        .special {
+            text-align: center;
+            margin: 10px 5% 50px;
+            padding: 35px 20px;
+            background-color: #29221d;
+            border: 1px solid #654126;
+            border-radius: 12px;
+        }
+
+        .special h2 {
+            color: #ff8c42;
+        }
+        .special p {
+            color: #ddd;
+            line-height: 1.8;
+        }
+
+        .footer {
+            background-color: #101010;
+            border-top: 1px solid #333;
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+            font-size: 17px;
+        }
+
+        .footer span {
+            color: #ff8c42;
+        }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo"><img src="food-pic/logo.png" width="50px" height="40px">Yummy Junction</div>
+
+    <div class="nav">
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="recommendation.html">Recommend</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login/out</a>
+    </div>
+</div>
+
+<div class="alt">
+    <p class="small">OUR RECOMMENDATIONS</p>
+    <h1><span>Top Picks</span> Just for You</h1>
+    <p>
+        Discover our most famous dishes, handpicked for you.<br>
+        Fresh ingredients and delicious flavors in every bite.
+    </p>
+</div>
+
+<div class="menu-title">
+    <h2>Our Customer Favorites</h2>
+    <p>Delicious choices you don't want to miss.</p>
+</div>
+
+<div class="foods">
+
+    <div class="pone">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Classic beef burger">
+
+        <div class="details">
+            <span class="badge">🔥 MOST POPULAR</span>
+            <h3>Classic Beef Burger</h3>
+            <p>Juicy beef, fresh lettuce, melted cheese and crispy fries.</p>
+
+            <div class="priceee">
+                <span class="price">$6.99</span>
+                <span class="rating">★ 4.8</span>
+            </div>
+
+            <p>
+                <a class="order" href="order.html">Order Now →</a>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="pone">
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600"
+             alt="Creamy pasta">
+
+        <div class="details">
+            <span class="badge">👨‍🍳 CHEF'S CHOICE</span>
+            <h3>Creamy Italian Pasta</h3>
+            <p>Rich creamy sauce, delicious pasta and fresh herbs.</p>
+
+            <div class="priceee">
+                <span class="price">$7.99</span>
+                <span class="rating">★ 4.7</span>
+            </div>
+
+            <p>
+                <a class="order" href="order.html">Order Now →</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="pone">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"
+             alt="Fresh healthy salad">
+
+        <div class="details">
+            <span class="badge">🥗 HEALTHY CHOICE</span>
+            <h3>Fresh Garden Salad</h3>
+            <p>Fresh greens, colorful vegetables and tasty dressing.</p>
+
+            <div class="priceee">
+                <span class="price">$6.50</span>
+                <span class="rating">★ 4.6</span>
+            </div>
+
+            <p>
+                <a class="order" href="order.html">Order Now →</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="pone">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+             alt="Cheese pizza">
+
+        <div class="details">
+            <span class="badge">❤️ CUSTOMER FAVORITE</span>
+            <h3>Margherita Pizza</h3>
+            <p>Golden crust, melted cheese, tomato sauce and fresh basil.</p>
+
+            <div class="priceee">
+                <span class="price">$7.50</span>
+                <span class="rating">★ 4.7</span>
+            </div>
+            <p>
+                <a class="order" href="order.html">Order Now →</a>
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="pone">
+        <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600"
+             alt="Chicken wings">
+
+        <div class="details">
+            <span class="badge">🌶️ SPICY FAVORITE</span>
+            <h3>Spicy Chicken Wings</h3>
+            <p>Crispy chicken wings covered in our special spicy sauce.</p>
+
+            <div class="priceee">
+                <span class="price">$5.99</span>
+                <span class="rating">★ 4.5</span>
+            </div>
+
+            <p>
+                <a class="order" href="order.html">Order Now →</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="pone">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+             alt="Chocolate cake">
+
+        <div class="details">
+            <span class="badge">⭐ SWEET TREAT</span>
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate flavor for a sweet and memorable ending.</p>
+
+            <div class="priceee">
+                <span class="price">$4.99</span>
+                <span class="rating">★ 4.9</span>
+            </div>
+
+            <p>
+                <a class="order" href="order.html">Order Now →</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+	<div class="special">
+    <h2>Good Food, Happy Mood!</h2>
+    <p>
+        Looking for something delicious today?<br>
+        Explore our full menu and find your next favorite meal.
+    </p>
+
+    <a class="order">Explore Full Menu →</a>
+</div>
+
+<div class="footer">
+    <p>&copy;2026 Thant Zin Ko (Batch 6-26). All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

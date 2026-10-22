@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<style>
+		body{
+			margin: 0;
+			font-family: Verdana;
+			background: #171717;
+			color: white;
+		}
+		.header2{
+			background: #111;
+			padding: 22px 5%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 18px;
+
+		}
+		.logo2{
+			color: #ff8c42;
+			font-size: 26px;
+			font-weight: bold;
+		}
+		.nav{
+			text-align: right;
+		}
+		.nav a{	
+			color: white;
+			text-decoration: none;
+			margin: 8px;
+			font-size: 13px;
+		}
+		.nav a:hover{
+			color: #ff8c42;
+		}
+		.heading{
+			text-align: center;
+			padding: 35px 15px 20px;
+
+			background-image: linear-gradient(
+                rgba(0,0,0,0.78),
+                rgba(0,0,0,0.88)
+            ), url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400");
+            background-size: cover;
+            background-position: center;
+		}
+		h1{
+			color: #ff8c42;
+		}
+		.menu{
+			display: flex;
+			gap: 25px;
+			padding: 25px;
+		}
+		.pone img:hover{
+			color: #ffc08f;
+		
+		}
+		.pone{
+			background: #252525;
+			width: 270px;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 3px 10px #dddddd;
+			text-align: center;
+		}
+
+		.pone img{
+			width: 100%;
+			height: 190px;
+			display: flex;
+
+		}
+		.pone hover{
+			box-shadow: 0 8px 20px #ff8c42;
+		}
+		.foodie1{
+			display: flex;
+			gap: 25px;
+			padding: 25px;
+		}
+		.details{
+			padding: 18px;
+		}
+		.details p{
+			color: #ccc;
+			height: 1.6;
+		}
+		.price{
+			color: #ff8c42;
+			font-size: 20px;
+			font: bold;
+		}
+		.footer2{
+			text-align: center;
+			padding: 20px;
+			color: #aaa;
+
+		}
+		.header2{
+			gap: 18px;
+		}
+		.nav2{
+			text-align: center;
+			height: 2.5;
+		}
+
+		.order-btn {
+    		display: inline-block;
+    		background: #ff8c42;
+    		color: #fff;
+    		text-decoration: none;
+    		padding: 11px 22px;
+    		margin-top: 15px;
+    		border-radius: 25px;
+    		font-weight: bold;
+		}
+
+		.order-btn:hover {
+    		background: #ff6b1a;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="header2">
+		<div class="logo2"><img src="food-pic/logo.png" width="50px" height="40px">Yummy Junction</div>
+		<div class="nav">
+			<ul>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="menu.html">Menu</a>
+			<a href="recommendation.html">Recommend</a>
+			<a href="contact.html">Contact</a>
+			<a href="login.html">Login/out</a>
+		</ul>
+		</div>
+
+	</div>
+
+	<div class="heading">
+		<p>FRESH • TASTY • DELICIOUS</p>
+		<h1>Explore Our Menu</h1>
+		<p>Something delicious for every craving.</p>
+	</div>
+
+	<div class="menu">
+		<div class="pone">
+			<img src="food-pic/burger.jfif">
+			<div class="details">
+				<h3>Burger</h3>
+				<p>Juicy beef, fresh lettuce, cheese and our special sauce.</p>
+				<div class="price">$8.99</div>
+				<a href="order.html" class="order-btn">Order Now →</a>
+			
+			</div>
+		</div>
+
+		<div class="pone">
+			<img src="food-pic/sandwich.jfif">
+			<h3>Sandwich</h3>
+			<p>Fresh bread filled with cheese, vegetables and tasty sauce.</p>
+			<div class="price">$8.5</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+	 	
+
+		<div class="pone">
+			<img src="food-pic/spaghetti.jfif">
+			<h3>Spaghetti</h3>
+			<p>Topped with rich tomato sauce, fresh herbs, and cheese.</p>
+			<div class="price">$10.5</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+
+		<div class="pone">
+			<img src="food-pic/steak.jfif">
+			<h3>Steak</h3>
+			<p>Tender, juicy grilled steak served with fresh vegetables.</p>
+			<div class="price">$15.99</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+
+		<div class="pone">
+			<img src="food-pic/taco.jfif">
+			<h3>Taco</h3>
+			<p>Filled with seasoned meat, fresh vegetables, cheese.</p>
+			<div class="price">$11</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+		</div>
+
+		<div class="foodie1">
+		<div class="pone">
+			<img src="food-pic/omelette.jfif">
+			<h3>Omelette</h3>
+			<p>Fluffy eggs cooked to perfection with fresh herbs, cheese.</p>
+			<div class="price">$10</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+
+		<div class="pone">
+			<img src="food-pic/soup.jfif">
+			<h3>Soup</h3>
+			<p>Warm and comforting soup made with fresh vegetables.</p>
+			<div class="price">$10</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+
+		<div class="pone">
+			<img src="food-pic/sushi.jfif">
+			<h3>Sushi</h3>
+			<p>ROlls filled with rice, seafood, and crisp vegetables.</p>
+			<div class="price">$7.5</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+
+		<div class="pone">
+			<img src="food-pic/noodles.jfif">
+			<h3>Noodles</h3>
+			<p>Tossed with savory sauce, fresh vegetables, and tender meat.</p>
+			<div class="price">$8.5</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+
+		<div class="pone">
+			<img src="food-pic/pancake.jfif">
+			<h3>Strawberry Pancake</h3>
+			<p>Soft, fluffy topped with fresh, and sweet strawberries syrup.</p>
+			<div class="price">$11.5</div>
+			<a href="order.html" class="order-btn">Order Now →</a>
+		</div>
+
+	</div>
+
+
+	<div class="footer2">&copy;2026 Developed By Thant Zin Ko (Batch 6-26). All rights reserved.</div>
+
+</body>
+</html>

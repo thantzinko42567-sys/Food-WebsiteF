@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Now</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            background: #171717;
+            color: white;
+            background: linear-gradient(
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.75)
+                ),
+                url("https://images.openai.com/static-rsc-4/993aUhklpdY_GjcyWMyR4a24YqFyHQLRZPARiZwjK8ftxHPJ_2DX4qoxDjLi39WmwqJyJFmFnMUpw7f3Tpm-xHnEoVZc-fYZtmO4S3_XQqEcet8MjsZKsVVR1GuZDyFm3d9aNm1X0bRP_2HHHNOSmmb8d087JEr-B56N5wnmSjv1boYKhqSEfNNsOThgurD0?purpose=fullsize");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        background-image{
+        	opacity: 0.5;
+        }
+
+        .header {
+            background: #111;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo {
+            color: #ff8c42;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            color: #ff8c42;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 25px;
+        }
+
+        h1 {
+            color: #ff8c42;
+        }
+
+        .order-box {
+            background: #252525;
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #555;
+        }
+
+        h2 {
+            color: #ff8c42;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+        	width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background: #171717;
+            color: white;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .food-info {
+            background: #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            color: #ff8c42;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            background: #ff8c42;
+            color: white;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e96f20;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            color: #ff8c42;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+        }
+
+        .order-box {
+			width: 80%;
+        }
+
+        .header {
+			gap: 10px;
+        }
+
+        .logo {
+            font-size: 17px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">Yummy Junction</div>
+        <a href="menu.html">Back to Menu</a>
+    </div>
+
+    <div class="heading">
+        <p>FRESH • TASTY • DELICIOUS</p>
+        <h1>Order Now</h1>
+        <p>Please fill in your order details.</p>
+    </div>
+
+    <div class="order-box">
+
+        <h2>Food Details</h2>
+
+        <h2>Customer Information</h2>
+
+        <form action="#" method="post">
+
+            <label for="name">Customer Name</label>
+            <input type="text" id="name" name="customer_name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+            <label for="food">Choose Food</label>
+            <select id="food" name="food">
+                <option>Burger</option>
+                <option>Sandwich</option>
+                <option>Spaghetti</option>
+                <option>Steak</option>
+                <option>Taco</option>
+                <option>Omelette</option>
+                <option>Soup</option>
+                <option>Sushi</option>
+                <option>Noodles</option>
+                <option>Strawberry Pancake</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="payment">Payment Method</label>
+            <select id="payment" name="payment">
+                <option>Cash On Delivery</option>
+                <option>KPAY Payment</option>
+                <option>BANK Payment</option>
+            </select>
+
+            <button type="submit">Order Now</button>
+
+        </form>
+
+        <a href="menu.html" class="back">Back to Menu</a>
+
+    </div>
+
+    <div class="footer">&copy; 2026 Yummy Junction. All rights reserved.</div>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            background-color: #171717;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #111;
+            padding: 22px 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ff8c42;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+
+            background: linear-gradient(
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.75)
+                ),
+                url("https://images.openai.com/static-rsc-4/993aUhklpdY_GjcyWMyR4a24YqFyHQLRZPARiZwjK8ftxHPJ_2DX4qoxDjLi39WmwqJyJFmFnMUpw7f3Tpm-xHnEoVZc-fYZtmO4S3_XQqEcet8MjsZKsVVR1GuZDyFm3d9aNm1X0bRP_2HHHNOSmmb8d087JEr-B56N5wnmSjv1boYKhqSEfNNsOThgurD0?purpose=fullsize");
+
+            background-size: cover;
+            background-position: center;
+            
+
+        }
+        background-image{
+            opacity: 0.2;
+        }
+
+        .login {
+            background-color: #252525;
+            width: 350px;
+            max-width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 35px #000;
+        }
+
+        h1 {
+            color: #ff8c42;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .login p {
+            color: #ccc;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        .add {
+            margin-top: 20px;
+        }
+
+        .add p {
+            text-align: left;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .add input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #171717;
+            color: white;
+        }
+
+        .login-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #ff8c42;
+            color: #171717;
+            padding: 13px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #ffc08f;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.8;
+            font-size: 13px;
+        }
+
+        .signup a {
+            color: #ff8c42;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+            .login {
+                padding: 22px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo"><img src="food-pic/logo.png" width="50px" height="40px">Yummy Junction</div>
+    </div>
+
+    <div class="main">
+        <div class="login">
+
+            <h1>Welcome Back!!!</h1>
+            <p>Login To Yummy Junction</p>
+
+            <div class="add">
+                <p>Email Address</p>
+                <input type="email"
+                       name="email"
+                       placeholder="Enter Your Email" required>
+            </div>
+            <form action="index.html" method="GET">
+            <div class="add">
+                <p>Phone Number</p>
+                <input type="tel"
+                       name="phoneno"
+                       placeholder="+95"
+                       maxlength="10" required>
+            </div>
+
+            <div class="add">
+                <p>Password</p>
+                <input type="password"
+                       name="password"
+                       placeholder="Enter Your Password" required>
+            </div>
+
+            <button class="login-button" type="sumit">Login</button>
+            </form>
+            <div class="signup">
+                What are you looking for?<br>
+                <a href="menu.html">Explore Our Menu</a>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
